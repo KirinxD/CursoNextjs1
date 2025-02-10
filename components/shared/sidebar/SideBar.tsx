@@ -1,7 +1,7 @@
 "use server"
 import Image from "next/image";
 import { SideBarItem } from "./sideBarItem";
-import { Calculator, Home, Triangle } from "lucide-react";
+import { Calculator, Heart, Home, Triangle } from "lucide-react";
 import { JSX } from "react";
 
 interface menuItemsInterface {
@@ -14,6 +14,7 @@ const menuItems:menuItemsInterface[] = [
   { path: "/dashboard/main", text: "Main",icon:<Home width={30} height={30}/>, subTitle:"Home page"},
   { path: "/dashboard/counter", text: "Counter",icon:<Calculator width={30} height={30}/>, subTitle:"Counter page" },
   { path: "/dashboard/pokemons", text: "Pokemon",icon:<Triangle width={30} height={30}/>, subTitle:"Counter page" },
+  { path: "/dashboard/favorite", text: "Favorites",icon:<Heart width={30} height={30}/>, subTitle:"Favorite pokemon" },
 ];
 
 const SideBar = () => {

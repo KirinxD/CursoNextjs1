@@ -1,6 +1,8 @@
 //Shared
 export * from "./shared/sidebar/SideBar";
 export * from "./shared/sidebar/sideBarItem";
+export * from "./shared/simpleWidget/widgetGrid";
+export * from "./shared/simpleWidget/simpleWidget";
 
 //Particular
 export * from "./particular/pokemons/pokemonCard"
