@@ -10,7 +10,7 @@ const getPokemons = async (limit = 20,offset = 0): Promise<SimplePokemon[]> => {
 
   const data = dataResult.results.map(pokemon => ({
     id: pokemon.url.split("/").at(-2)!,
-    name: pokemon.name,
+    name: pokemon.name
   }))
 
   return data;
@@ -23,7 +23,7 @@ export default async function PokemonPage() {
       <div className="text-2xl">Choose your Pokemon</div>
       <div className="flex flex-wrap gap-10">
         {pokemons.map((pokemon,index) => (
-         <PokemonCard key={index} name={pokemon.name} id={pokemon.id}/>
+         <PokemonCard key={index} pokemon={pokemon}/>
         ))}
       </div>
     </>

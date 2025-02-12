@@ -9,3 +9,6 @@ export * from "./particular/pokemons/pokemonCard"
 export * from "./particular/shoppingCart/CartCounter"
 export type * from "./particular/pokemons/interfaces/pokemonInterface"
 export type * from "./particular/pokemons/interfaces/pokemonParticular"
+
+//Interfaces
+export type {SimplePokemon} from "./particular/pokemons/interfaces/pokemonInterface"
